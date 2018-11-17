@@ -21,6 +21,7 @@
       <div v-if="privKey !== ''">
         <p>Private Key: {{privKey.toString('hex')}}</p>
         <p>Public Key:  {{pubKey.toString('hex')}}</p>
+        <p>Public Key hash:  {{pubKeyHash.toString('hex')}}</p>
         <p>Ethereum address: {{ETHaddress}}</p>
         <button v-on:click="signSampleTx">Sign sample transaction</button>
       </div>
